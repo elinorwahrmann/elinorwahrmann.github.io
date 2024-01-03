@@ -1,0 +1,9 @@
+# Site settings
+title: Elinor Wahrmann, LMFT
+email: therapy@elinorwahrmann.com
+description: Elinor Wahrmann, LMFT
+baseurl: "" 
+url: "http://www.elinorwahrmann.com" 
+
+# Build settings
+markdown: kramdown

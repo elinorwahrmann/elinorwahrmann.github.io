@@ -1,0 +1,27 @@
+---
+title: Articles
+layout: default
+---
+
+{% include title.html title="Articles" %}
+
+<div class="content">
+    {% for post in site.posts %}
+        <a href="{{ post.url | prepend: site.baseurl }}">            
+            <div class="article-summary">
+                <span class="tag">
+                    {{post.tags | first }}
+                </span>
+                <span class="title">{{ post.title }}</span>
+                <span class="date">{{ post.date | date: "%B %Y" }}</span>
+                <div class="description">
+                    <img src="{{ post.thumbnail }}" />
+                    <p>{{ post.description }}</p>
+                </div>
+            </div>
+        </a>
+        <div class="article-seperator-container">
+            <div class="article-seperator"></div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="{{ page.title }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta property="og:image" content="{{ site.url }}{{ page.photo }}" />
+      <meta property="og:site_name" content="Elinor Wahrmann" />
+  </head>
+  <body>
+    {% include header.html %}
+      <div class="page">  
+        <div class="content">
+            <article>
+                <div class="article-title">{{ page.title }}</div>
+                <div class="article-date">{{ page.date | date: "%B %Y" }}</div>
+                <div class="article-image">
+                    <img src="{{ page.photo }}" />
+                </div>    
+                {{ content }}
+            </article>
+            <div class="article-seperator-container">
+                <div class="article-seperator-tall"></div>
+            </div>
+            <div class="article-tags">
+                <span>TAGS</span>
+                {% for tag in page.tags %}
+                        <a href="/tag/{{tag}}/">{{tag}}</a>
+                {% endfor %}
+            </div>
+        </div>
+      </div>
+    {% include footer.html %}
+  </body>
+</html>
+
+          
+

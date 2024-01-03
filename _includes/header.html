@@ -1,0 +1,50 @@
+<header>
+    <div id="header-content">
+        <div id="logo">
+            <a href="/">
+                <span id="logo-line-1">Elinor Wahrmann</span>
+                <span id="logo-line-2">Licensed Marriage & Family Therapist</span>
+            </a>
+        </div> 
+        <nav>
+            <ul id="nav-links">
+                {% capture header %}{{page.url | split:'-' | first}}{% endcapture %}
+                <li><a href="/about.html" {% if page.url == '/about.html'%}class="selected"{% endif %}>about</a></li>
+                <li id="specialties-target">specialties
+                    <span id="specialties-menu">
+                        <ul>
+                            <li><a href="/life-transitions.html" {% if page.url == '/life-transitions.html'%}class="selected"{% endif %}>Major Life Transitions</a></li>
+                            <li><a href="/relationships.html" {% if page.url == '/relationships.html'%}class="selected"{% endif %}>Relationships</a></li>
+                            <li><a href="/self-worth.html" {% if page.url == '/self-worth.html'%}class="selected"{% endif %}>Mom Burnout</a></li>
+                        </ul>
+                    </span>
+                </li>                
+                <li><a href="/faq.html" {% if page.url == '/faq.html'%}class="selected"{% endif %}>faq</a></li>
+                <li><a href="/articles.html" {% if page.url == '/articles.html'%}class="selected"{% endif %}>articles</a></li>
+                <li class="nav-links-right"><a href="/contact.html" {% if page.url == '/contact.html'%}class="selected"{% endif %}>schedule free consultation</a></li>
+            </ul>
+            <div id="nav-menu">
+                <input type="checkbox" id="nav-menu-toggle" />
+                <label for="nav-menu-toggle" class="nav-menu-open">
+                    <div class="open"></div>
+                </label>
+                <div class="menu menuEffects">
+                    <label for="nav-menu-toggle"></label>
+                    <div class="menuContent">
+                        <ul>
+                            <li class="menu-double-padding"><a href="/about.html" {% if page.url == '/about.html'%}class="selected"{% endif %}>about</a></li>
+                            <li class="menu-single-padding menu-section-title">Specialties</li>
+                            <li class="menu-single-padding"><a href="/life-transitions.html" {% if page.url == '/life-transitions.html'%}class="selected"{% endif %}>Major Life Transitions</a></li>
+                            <li class="menu-single-padding"><a href="/relationships.html" {% if page.url == '/relationships.html'%}class="selected"{% endif %}>Relationships</a></li>
+                            <li class="menu-double-padding"><a href="/self-worth.html" {% if page.url == '/self-worth.html'%}class="selected"{% endif %}>Mom Burnout</a></li>
+                            <li class="menu-double-padding"><a href="/faq.html" {% if page.url == '/faq.html'%}class="selected"{% endif %}>faq</a></li>
+                            <li class="menu-double-padding"><a href="/articles.html" {% if page.url == '/articles.html'%}class="selected"{% endif %}>articles</a></li>
+                            <li class="menu-double-padding"><a href="/contact.html" {% if page.url == '/contact.html'%}class="selected"{% endif %}>schedule free consultation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+</header>

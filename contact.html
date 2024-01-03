@@ -1,0 +1,39 @@
+---
+title: Contact
+layout: default
+---
+
+{% include title.html title="Contact" %}
+
+<div class="content">
+    <div class="contact-details">
+        <p>I offer a free 15 minute in-person consultation to address any questions you might have.</p><p> To schedule an appointment or for more information, please complete the confidential form or phone <a href="tel:1-650-770-3427" style="white-space: nowrap;">(650) 770-3427</a>.</p>
+        <p>My office is located at:<br/> <a href="https://www.google.com/maps/place/885+N+San+Antonio+Rd,+Los+Altos,+CA+94022">885 N San Antonio Rd.<br/> Los Altos, CA 94022</a></p>
+    </div>
+    <div class="contact-form">
+        <form action="message" method="post">
+            <div class="group">
+                <label>Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="group">
+                <label>Email</label>
+                <input type="text" name="email" required>
+            </div>
+            <div class="group">
+                <label>Phone</label>
+                <input type="text" name="phone" required>
+            </div>
+            <div class="group">
+                <label>Description</label>
+                <textarea name="description" rows="5"></textarea>
+            </div>
+             <input class="button" type="submit" name="submit" value="Send Request"/>
+        </form>
+    </div>
+    <div class="contact-map">
+        <a href="https://www.google.com/maps/place/885+N+San+Antonio+Rd,+Los+Altos,+CA+94022">
+            <div class="contact-map-image"> </div>
+        </a>
+    </div>
+</div>

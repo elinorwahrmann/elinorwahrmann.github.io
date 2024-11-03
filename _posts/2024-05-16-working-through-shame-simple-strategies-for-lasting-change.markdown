@@ -2,7 +2,7 @@
 layout: article
 title: "Working Through Shame: Simple Strategies for Lasting Change"
 description: "Have you ever had one of those moments where you made a mistake, felt embarrassed, or didn’t meet your own expectations—and couldn’t shake that feeling for hours, or even days? Maybe it's that urge to disappear after saying the wrong thing, that guilt over snapping at your child, or the constant worry that you’re not good enough as a partner. These moments can stir up self-doubt and feelings of inadequacy. In this article, you'll find four practical ways to work through shame and begin the journey toward self-compassion and personal growth."
-date: 2024-10-16 11:00:00
+date: 2024-05-16 11:00:00
 categories: articles
 tags: self-care
 thumbnail: /assets/thumbnail-working-through-shame-simple-strategies-for-lasting-change.jpg
